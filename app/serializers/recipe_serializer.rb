@@ -1,5 +1,5 @@
 class RecipeSerializer < ActiveModel::Serializer
-   attributes :id, :country, :servings, :cuisine, :calories, :author_id, :related_id
+   attributes :id, :country, :servings, :cuisine, :calories, :author_id
    has_one :author, :serializer => UserSerializer
    has_one :steps
    has_many :comments

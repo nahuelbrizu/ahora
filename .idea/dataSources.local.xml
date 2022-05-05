@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="RM-212.5284.50">
-    <data-source name="rv1_development@localhost" uuid="7ff40ac3-dc6c-4840-90e3-34be1c2f84c7">
-      <database-info product="MySQL" version="8.0.25-0ubuntu0.20.04.1" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.0.25" exact-driver-version="8.0">
+    <data-source name="Rails rv1: production" uuid="0ca3d1eb-da76-4fbf-a878-69d0232b3192">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <user-name>rv1</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="Rails rv1: development" uuid="29855d4c-0471-4b48-a115-ca47e1975c3b">
+      <database-info product="MySQL" version="8.0.27-0ubuntu0.21.04.1" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.0.27" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
           <node kind="schema" qname="@" />
         </introspection-scope>
       </schema-mapping>
+    </data-source>
+    <data-source name="Rails rv1: test" uuid="f03bd954-3782-4f22-9a11-5ecb0809e2d4">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <user-name>root</user-name>
+      <schema-mapping />
     </data-source>
   </component>
 </project>

@@ -32,7 +32,7 @@ class StepsController < ActionController::Base
   end
 
   def step_params
-    params.require([:step]).permit([:Starting_time][:estimated_time][:recipe_id])
+    params.require(:step).permit(:Starting_time, :estimated_time, :recipe_id)
   end
 
 

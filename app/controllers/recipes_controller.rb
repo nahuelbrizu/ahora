@@ -15,7 +15,7 @@ class RecipesController < ActionController::Base
   end
 
   def recipe_params
-    params.require([:recipe]).permit([:servings][:country][:cuisine][:calories][:author_id][:related_id])
+    params.require(:recipe).permit(:servings, :country, :cuisine, :calories, :author_id)
   end
 
 end

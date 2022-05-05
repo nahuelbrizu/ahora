@@ -196,9 +196,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_04_171300) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "author_id"
-    t.bigint "related_id"
     t.index ["author_id"], name: "index_recipes_on_author_id"
-    t.index ["related_id"], name: "index_recipes_on_related_id"
   end
 
   create_table "related_recipes", id: { type: :bigint, unsigned: true }, charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -266,7 +264,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_04_171300) do
   add_foreign_key "likes", "recipes"
   add_foreign_key "orders", "recipes"
   add_foreign_key "ratings", "recipes"
-  add_foreign_key "recipes", "recipes", column: "related_id"
   add_foreign_key "recipes", "users", column: "author_id"
   add_foreign_key "steps", "recipes"
   add_foreign_key "videos", "recipes"

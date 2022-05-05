@@ -24,7 +24,7 @@ class RelatedRecipesController < ActionController::Base
     end
   end
   def related_recipe_params
-    params.require([:related_recipe]).permit([:related_id][:recipe_id])
+    params.require(:related_recipe).permit(:related_id, :recipe_id)
   end
 end
 
