@@ -5,5 +5,4 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
-* ...
+api rest with Ruby and  db mysql
